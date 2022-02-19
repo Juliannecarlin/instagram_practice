@@ -1,0 +1,12 @@
+<h1>Our Trips <3 </h1>
+ 
+ <ul>
+   <% for trip in @trips %>
+    <li>
+      <a href="/trips/<%= trip.id %>"><%= trip.name %></a>
+    </li>
+   <% end %>
+</ul>
+<p>
+    <a href="/trips/new">Add New Trip</a>
+</p>

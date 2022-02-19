@@ -1,0 +1,17 @@
+<h1><%= @trip.name %></h1>
+
+    <% for post in @trip.posts %>
+        <div class="col-3">
+            <h2><%= post.title %></h2>
+            <img class="img-fluid" src="<%= post.image %>" class="w-full">
+            <p><%= post.description %></p>
+            <p><%= post.posted_on %></p>
+        </div>
+    <% end %>
+
+<p>
+    <a href="/posts/new?trip_id=<%= @trip.id %>">New Post</a>
+</p>
+<p>
+    <a href="/trips">Go back to all places</a>
+</p>

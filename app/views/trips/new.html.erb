@@ -1,0 +1,9 @@
+<%= form_with model: @trip do |form| %>
+    <p>
+      <%= form.label "name", "Trip" %>
+      <%= form.text_field "name" %>
+      <%= form.label "trip_date", "Trip Date" %>
+      <%= form.date_field "trip_date" %>
+    </p>
+    <%= form.submit %>
+  <% end %>
